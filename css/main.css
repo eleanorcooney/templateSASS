@@ -1,0 +1,32 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  background: #33cccc; }
+
+nav {
+  text-align: center;
+  background: teal;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  nav li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px 5%; }
+  nav a {
+    text-decoration: none;
+    color: #33cccc;
+    transition: all 1s; }
+
+.box2 {
+  width: 100px;
+  height: 100px; }
+
+.shadebox {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.tintbox {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+/*# sourceMappingURL=main.css.map */

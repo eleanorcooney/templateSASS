@@ -1,0 +1,41 @@
+$color1: teal;
+$boxWidth: 50px;
+$standardBorder: 1px solid black;
+$baseFontSize: 12px;
+$baseFont: 'Montserrat', sans-serif;
+$marginTop: 50px;
+$color2: #33cccc;
+
+
+body {
+	font-family: $baseFont;
+	margin-top: $marginTop;
+	background: $color2;
+}
+
+@import 'nav';
+
+@mixin square($size) {
+	width: $size;
+	height: $size;
+}
+
+.box2 {
+	@include square(100px);
+}
+
+@mixin shade($opacity) {
+	background-color: rgba(0,0,0, $opacity);
+}
+
+@mixin tint($opacity) {
+	background-color: rgba(255,255,255, $opacity);
+}
+
+.shadebox {
+	@include shade(.7);
+}
+
+.tintbox {
+	@include tint(.7);
+}
